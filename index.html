@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<head>
+	<script src="Chart.js"></script> 
+	<script src="http://www.parsecdn.com/js/parse-latest.js" type="text/javascript"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	
+	<style>
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 50px;
+	}
+
+	#ProductTitle{
+		margin-top: 1%;
+	}
+
+	#canvas{
+		display: inline-block;
+		float: left;
+		margin-left:2%;
+		margin-right:2%;
+		
+	}
+
+	#charts{
+		margin-left:3%;
+		margin-right:3%;
+		left: 3%;
+
+	}
+
+	.option {
+		-moz-box-shadow:inset 0px 39px 0px -24px #F7464A;
+		-webkit-box-shadow:inset 0px 39px 0px -24px #F7464A;
+		box-shadow:inset 0px 39px 0px -24px #F7464A;
+		background-color:#F7464A;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		border-radius:4px;
+		border:1px solid #ffffff;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:30px;
+		padding:6px 50px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #b23e35;
+		margin-top:1%;
+
+	}
+	.option:hover {
+		background-color:#eb675e;
+	}
+	.option:active {
+		position:relative;
+		top:1px;
+	}
+
+	
+	</style>
+
+</head>
+
+<body>
+
+	<div id="vendorSelect">
+		<center>
+		<a href="#" class="option" id="skittles">Skittles</a>
+		<a href="#" class="option" id="peanuts">Peanuts</a>
+		<a href="#" class="option" id="nutri">NutriGrain</a>
+		<a href="#" class="option" id="oreos">Oreos</a>
+		</center>
+	</div>
+
+	<div id="temp">
+		<center>
+			<img src="Vending.png" width="38%">
+		<center>
+	</div>
+
+	<div id="ProductTitle">
+		<center><h2> Item: Skittles </h2></center>
+	</div>
+
+	<div id="charts">
+		<!--time data-->
+		<div id="canvas" style="width: 30%">
+			<center> <h1> Time </h1> </center>
+			<canvas id="canvas1" height="28%" width="30%"></canvas>
+		</div>
+
+		<!--age data-->
+		<div id="canvas" style="width:25%">
+			<center> <h1> Age </h1> </center>
+			<canvas id="canvas3" width="150%" height="150%" style=""></canvas>
+		</div>
+
+		<!--gender data-->
+		<div id="canvas" style = "width:30%">
+			<center> <h1> Gender </h1> </center>
+			<canvas id="canvas2" height="25%" width="30%"></canvas>
+		</div>
+	</div>
+
+
+	<script>
+		//variables that are updated according to parse
+
+		//time data
+		var Time1 = [0,0,0,0];
+		var Time2 = [0,0,0,0];
+		var Time3 = [0,0,0,0];
+		var Time4 = [0,0,0,0];
+		var Time5 = [0,0,0,0];
+		var Time6 = [0,0,0,0];
+		var Time7 = [0,0,0,0];
+		var Time8 = [0,0,0,0];
+		var Time9 = [0,0,0,0];
+		var Time10 = [0,0,0,0];
+		var Time11 = [0,0,0,0];
+		var Time12 = [0,0,0,0];
+
+
+		//age group data
+		var Age1 = [0,0,0,0];
+		var Age2 = [0,0,0,0];
+		var Age3 = [0,0,0,0];
+		var Age4 = [0,0,0,0];
+
+		//gender data
+		var Female = [0,0,0,0];
+		var Male = [0,0,0,0];
+
+
+		//time data
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["8-10AM","10-12PM","12-2PM","2-4PM","4-6PM","6-8PM","8-10PM", "10-12AM", "12-2AM", "2-4AM", "4-6AM", "6-8AM"],
+			datasets : [
+				{
+					label: "Age Data",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+				}
+			]
+		}
+
+		//gender data
+		var barChartData = {
+			labels : ["Female","Male"],
+			datasets : [
+				{
+					fillColor : "#46BFBD",
+					strokeColor : "rgba(220,220,220,0.9)",
+					highlightFill: "rgba(220,220,220,0.75)",
+					highlightStroke: "rgba(220,220,220,1)",
+					data : [randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+		}
+
+		//age data
+		var pieData = [
+				{
+					value: 200,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "10-15 years"
+				},
+				{
+					value: 150,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "16-20 years"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "21-25 years"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "26-30 years"
+				},
+			];
+
+			function loadData(a){
+				//update all data from Parse
+				update();
+
+				//determine which data we should be displaying - set index
+				var i = 0;
+				i=a;
+
+				//clear
+				document.getElementById("ProductTitle").style.display = 'none';
+				document.getElementById("charts").style.display = 'none';
+				document.getElementById("temp").style.display = 'none';
+
+				//replace with temp
+				document.getElementById("temp").style.display = 'inline';
+
+				//clear temp
+				document.getElementById("temp").style.display = 'none';
+
+				//replace with product title and charts
+				document.getElementById("ProductTitle").style.display = 'inline';
+				document.getElementById("charts").style.display = 'inline';
+				
+
+				//time data - line graph
+				var ctx1 = document.getElementById("canvas1").getContext("2d");
+				window.myLine = new Chart(ctx1).Line(lineChartData, {
+					responsive: true,
+					scaleShowHorizontalLines: false,
+					scaleShowVerticalLines: false
+				});
+
+				//update line graph
+				myLine.datasets[0].points[0].value = Time1[i];
+				myLine.datasets[0].points[1].value = Time2[i];
+				myLine.datasets[0].points[2].value = Time3[i];
+				myLine.datasets[0].points[3].value = Time4[i];
+				myLine.datasets[0].points[4].value = Time5[i];
+				myLine.datasets[0].points[5].value = Time6[i];
+				myLine.datasets[0].points[6].value = Time7[i];
+				myLine.datasets[0].points[7].value = Time8[i];
+				myLine.datasets[0].points[8].value = Time9[i];
+				myLine.datasets[0].points[9].value = Time10[i];
+				myLine.datasets[0].points[10].value = Time11[i];
+				myLine.datasets[0].points[11].value = Time12[i];
+				myLine.update();
+
+			
+				//gender data - bar graph
+				var ctx2= document.getElementById("canvas2").getContext("2d");
+					window.myBar = new Chart(ctx2).Bar(barChartData, {
+					responsive : true,
+					scaleShowHorizontalLines: false,
+					scaleGridLineWidth : 10,
+					barValueSpacing : 50,
+				});
+
+				//update bar graph
+				myBar.datasets[0].bars[0].value = Female[i];
+				myBar.datasets[0].bars[1].value = Male[i];
+				myBar.update();
+
+				//age data - pie chart
+				var ctx3 = document.getElementById("canvas3").getContext("2d");
+				window.myPie = new Chart(ctx3).Pie(pieData, {
+					responsive:true
+				});
+
+				//update pie chart
+				myPie.segments[0].value = Age1[i];
+				myPie.segments[1].value = Age2[i];
+				myPie.segments[2].value = Age3[i];
+				myPie.segments[3].value = Age4[i];
+				myPie.update();
+				
+			};
+
+			//update data values based on Parse, called at the beginning of every load data
+			function update() {
+		    	var Candy = Parse.Object.extend("Candy");
+				var query = new Parse.Query(Candy);
+
+
+				//Skittles
+				query.get("EOE0lBGbbg", {
+  					success: function(candy) {
+    					// The object was retrieved successfully.
+    					Female[0] = candy.get("femaleCount");
+						Male[0] = candy.get("maleCount");
+
+						Age1[0] = candy.get("ageCount")[0];
+						Age2[0] = candy.get("ageCount")[1];
+						Age3[0] = candy.get("ageCount")[2];
+						Age4[0] = candy.get("ageCount")[3];
+
+						Time1[0] = candy.get("timeCount")[0]+candy.get("timeCount")[1];
+						Time2[0] = candy.get("timeCount")[2]+candy.get("timeCount")[3];
+						Time3[0] = candy.get("timeCount")[4]+candy.get("timeCount")[5];
+						Time4[0] = candy.get("timeCount")[6]+candy.get("timeCount")[7];
+						Time5[0] = candy.get("timeCount")[8]+candy.get("timeCount")[9];
+						Time6[0] = candy.get("timeCount")[10]+candy.get("timeCount")[11];
+						Time7[0] = candy.get("timeCount")[12]+candy.get("timeCount")[13];
+						Time8[0] = candy.get("timeCount")[14]+candy.get("timeCount")[15];
+						Time9[0] = candy.get("timeCount")[16]+candy.get("timeCount")[17];
+						Time10[0] = candy.get("timeCount")[18]+candy.get("timeCount")[19];
+						Time11[0] = candy.get("timeCount")[20]+candy.get("timeCount")[21];
+						Time12[0] = candy.get("timeCount")[22]+candy.get("timeCount")[23];
+
+
+  					},
+  					error: function(object, error) {
+	    				// The object was not retrieved successfully.
+	    				// error is a Parse.Error with an error code and message.
+	    				Console.log("Parse error retrieving objects");
+  					}
+				});
+
+				//Peanuts 
+				query.get("JbJPEtPnI4", {
+  					success: function(candy) {
+    					// The object was retrieved successfully.
+    					Female[1] = candy.get("femaleCount");
+						Male[1] = candy.get("maleCount");
+
+						Age1[1] = candy.get("ageCount")[0];
+						Age2[1] = candy.get("ageCount")[1];
+						Age3[1] = candy.get("ageCount")[2];
+						Age4[1] = candy.get("ageCount")[3];
+						
+						Time1[1] = candy.get("timeCount")[0]+candy.get("timeCount")[1];
+						Time2[1] = candy.get("timeCount")[2]+candy.get("timeCount")[3];
+						Time3[1] = candy.get("timeCount")[4]+candy.get("timeCount")[5];
+						Time4[1] = candy.get("timeCount")[6]+candy.get("timeCount")[7];
+						Time5[1] = candy.get("timeCount")[8]+candy.get("timeCount")[9];
+						Time6[1] = candy.get("timeCount")[10]+candy.get("timeCount")[11];
+						Time7[1] = candy.get("timeCount")[12]+candy.get("timeCount")[13];
+						Time8[1] = candy.get("timeCount")[14]+candy.get("timeCount")[15];
+						Time9[1] = candy.get("timeCount")[16]+candy.get("timeCount")[17];
+						Time10[1] = candy.get("timeCount")[18]+candy.get("timeCount")[19];
+						Time11[1] = candy.get("timeCount")[20]+candy.get("timeCount")[21];
+						Time12[1] = candy.get("timeCount")[22]+candy.get("timeCount")[23];
+
+  					},
+  					error: function(object, error) {
+	    				// The object was not retrieved successfully.
+	    				// error is a Parse.Error with an error code and message.
+	    				Console.log("Parse error retrieving objects");
+  					}
+				});
+
+				//NutriGrain
+				query.get("miBalqNAbV", {
+  					success: function(candy) {
+    					// The object was retrieved successfully.
+    					Female[2] = candy.get("femaleCount");
+    					Male[2] = candy.get("maleCount");
+
+    					Age1[2] = candy.get("ageCount")[0];
+						Age2[2] = candy.get("ageCount")[1];
+						Age3[2] = candy.get("ageCount")[2];
+						Age4[2] = candy.get("ageCount")[3];
+
+						Time1[2] = candy.get("timeCount")[0]+candy.get("timeCount")[1];
+						Time2[2] = candy.get("timeCount")[2]+candy.get("timeCount")[3];
+						Time3[2] = candy.get("timeCount")[4]+candy.get("timeCount")[5];
+						Time4[2] = candy.get("timeCount")[6]+candy.get("timeCount")[7];
+						Time5[2] = candy.get("timeCount")[8]+candy.get("timeCount")[9];
+						Time6[2] = candy.get("timeCount")[10]+candy.get("timeCount")[11];
+						Time7[2] = candy.get("timeCount")[12]+candy.get("timeCount")[13];
+						Time8[2] = candy.get("timeCount")[14]+candy.get("timeCount")[15];
+						Time9[2] = candy.get("timeCount")[16]+candy.get("timeCount")[17];
+						Time10[2] = candy.get("timeCount")[18]+candy.get("timeCount")[19];
+						Time11[2] = candy.get("timeCount")[20]+candy.get("timeCount")[21];
+						Time12[2] = candy.get("timeCount")[22]+candy.get("timeCount")[23];
+  					},
+  					error: function(object, error) {
+	    				// The object was not retrieved successfully.
+	    				// error is a Parse.Error with an error code and message.
+	    				Console.log("Parse error retrieving objects");
+	    				Female[3] = candy.get("femaleCount");
+    					Male[3] = candy.get("maleCount");
+  					}
+				});
+
+				//Oreos
+		    	query.get("w2B7Dmlxlj", {
+  					success: function(candy) {
+    					// The object was retrieved successfully.
+    					Female[3] = candy.get("femaleCount");
+    					Male[3] = candy.get("maleCount");
+
+    					Age1[3] = candy.get("ageCount")[0];
+						Age2[3] = candy.get("ageCount")[1];
+						Age3[3] = candy.get("ageCount")[2];
+						Age4[3] = candy.get("ageCount")[3];
+
+						Time1[3] = candy.get("timeCount")[0]+candy.get("timeCount")[1];
+						Time2[3] = candy.get("timeCount")[2]+candy.get("timeCount")[3];
+						Time3[3] = candy.get("timeCount")[4]+candy.get("timeCount")[5];
+						Time4[3] = candy.get("timeCount")[6]+candy.get("timeCount")[7];
+						Time5[3] = candy.get("timeCount")[8]+candy.get("timeCount")[9];
+						Time6[3] = candy.get("timeCount")[10]+candy.get("timeCount")[11];
+						Time7[3] = candy.get("timeCount")[12]+candy.get("timeCount")[13];
+						Time8[3] = candy.get("timeCount")[14]+candy.get("timeCount")[15];
+						Time9[3] = candy.get("timeCount")[16]+candy.get("timeCount")[17];
+						Time10[3] = candy.get("timeCount")[18]+candy.get("timeCount")[19];
+						Time11[3] = candy.get("timeCount")[20]+candy.get("timeCount")[21];
+						Time12[3] = candy.get("timeCount")[22]+candy.get("timeCount")[23];
+
+  					},
+  					error: function(object, error) {
+	    				// The object was not retrieved successfully.
+	    				// error is a Parse.Error with an error code and message.
+	    				Console.log("Parse error retrieving objects");
+  					}
+				});
+			};
+
+			window.onload = function(){
+				Parse.initialize("MPqR3vpCyNjg9uKdjWBnFTHaThsXFpyWvmgAGdaF", "u94p4Axs4rhfGZuZquxFWlX3tv45kt0AkRG4HgB8");
+
+				/*var TestObject = Parse.Object.extend("TestObject");
+				var testObject = new TestObject();
+				testObject.save({foo: "bar"}).then(function(object) {
+ 					 alert("yay! it worked");
+				});*/
+
+				document.getElementById("ProductTitle").style.display = 'none';
+				document.getElementById("charts").style.display = 'none';
+				document.getElementsByTagName("a")[0].onclick = function() {
+					document.getElementById("ProductTitle").innerHTML = "<center><h2>Item: Skittles</h2></center>";
+					loadData(0);
+				}
+				document.getElementsByTagName("a")[1].onclick = function() {
+					document.getElementById("ProductTitle").innerHTML = "<center><h2>Item: Peanuts</h2></center>";
+					loadData(1);
+				}
+				document.getElementsByTagName("a")[2].onclick = function() {
+					document.getElementById("ProductTitle").innerHTML = "<center><h2>Item: NutriGrain</h2></center>";
+					loadData(2);
+				}
+				document.getElementsByTagName("a")[3].onclick = function() {
+					document.getElementById("ProductTitle").innerHTML = "<center><h2>Item: Oreos</h2></center>";
+					loadData(3);
+				}
+
+			};
+
+	</script>
+</body>
+
+
+</html>
