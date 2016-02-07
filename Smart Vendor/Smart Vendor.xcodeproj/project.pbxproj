@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F127CAF1C61D2AC0008D7D9 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F127CAE1C61D2AC0008D7D9 /* ItemViewController.swift */; };
+		5F127CB31C61D9300008D7D9 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F127CB21C61D9300008D7D9 /* BuyViewController.swift */; };
+		5F35132D1C62C5BA00E9FB5F /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F35132C1C62C5BA00E9FB5F /* JSSAlertView.swift */; };
+		5F4A17DD1C5EFBAB00259A47 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A17DC1C5EFBAB00259A47 /* StartViewController.swift */; };
+		5F4A17DF1C5EFF2000259A47 /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5F4A17DE1C5EFEE500259A47 /* Video.mp4 */; };
+		5F53DC2D1C5AFE4C00BE6D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53DC2C1C5AFE4C00BE6D42 /* AppDelegate.swift */; };
+		5F53DC321C5AFE4C00BE6D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F53DC301C5AFE4C00BE6D42 /* Main.storyboard */; };
+		5F53DC341C5AFE4C00BE6D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F53DC331C5AFE4C00BE6D42 /* Assets.xcassets */; };
+		5F53DC371C5AFE4C00BE6D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F53DC351C5AFE4C00BE6D42 /* LaunchScreen.storyboard */; };
+		5F53DC421C5AFE4C00BE6D42 /* Smart_VendorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53DC411C5AFE4C00BE6D42 /* Smart_VendorTests.swift */; };
+		5F53DC4D1C5AFE4C00BE6D42 /* Smart_VendorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53DC4C1C5AFE4C00BE6D42 /* Smart_VendorUITests.swift */; };
+		5F8497531C66CCEC000567FC /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8497521C66CCEC000567FC /* DoneViewController.swift */; };
+		5F8497551C67696E000567FC /* Happy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F8497541C67694E000567FC /* Happy.m4a */; };
+		5F8497571C6774E8000567FC /* final.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5F8497561C6774CC000567FC /* final.m4a */; };
+		5F9AAFCE1C62DF7400DC8AFC /* CustomIOS8AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AAFCD1C62DF7400DC8AFC /* CustomIOS8AlertView.swift */; };
+		5F9AAFD01C62E0D200DC8AFC /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9AAFCF1C62E0D200DC8AFC /* SCLAlertView.swift */; };
+		7AB4D458642FD2BDC74A8B5D /* Pods_Smart_Vendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B042AC5E63D9EF478B9D5F /* Pods_Smart_Vendor.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F53DC3E1C5AFE4C00BE6D42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F53DC211C5AFE4C00BE6D42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F53DC281C5AFE4C00BE6D42;
+			remoteInfo = "Smart Vendor";
+		};
+		5F53DC491C5AFE4C00BE6D42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F53DC211C5AFE4C00BE6D42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F53DC281C5AFE4C00BE6D42;
+			remoteInfo = "Smart Vendor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16B042AC5E63D9EF478B9D5F /* Pods_Smart_Vendor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Vendor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5172165DBDB15FFC2AC802FB /* Pods-Smart Vendor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Vendor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Vendor/Pods-Smart Vendor.debug.xcconfig"; sourceTree = "<group>"; };
+		5F127CAE1C61D2AC0008D7D9 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		5F127CB21C61D9300008D7D9 /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		5F35132C1C62C5BA00E9FB5F /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSSAlertView.swift; path = ../JSSAlertView.swift; sourceTree = "<group>"; };
+		5F4A17DC1C5EFBAB00259A47 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = ../StartViewController.swift; sourceTree = "<group>"; };
+		5F4A17DE1C5EFEE500259A47 /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Video.mp4; path = ../Video.mp4; sourceTree = "<group>"; };
+		5F53DC291C5AFE4C00BE6D42 /* Smart Vendor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Vendor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F53DC2C1C5AFE4C00BE6D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F53DC311C5AFE4C00BE6D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F53DC331C5AFE4C00BE6D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F53DC361C5AFE4C00BE6D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F53DC381C5AFE4C00BE6D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F53DC3D1C5AFE4C00BE6D42 /* Smart VendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart VendorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F53DC411C5AFE4C00BE6D42 /* Smart_VendorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_VendorTests.swift; sourceTree = "<group>"; };
+		5F53DC431C5AFE4C00BE6D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F53DC481C5AFE4C00BE6D42 /* Smart VendorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart VendorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F53DC4C1C5AFE4C00BE6D42 /* Smart_VendorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_VendorUITests.swift; sourceTree = "<group>"; };
+		5F53DC4E1C5AFE4C00BE6D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8497521C66CCEC000567FC /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		5F8497541C67694E000567FC /* Happy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Happy.m4a; sourceTree = "<group>"; };
+		5F8497561C6774CC000567FC /* final.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = final.m4a; sourceTree = "<group>"; };
+		5F9AAFCD1C62DF7400DC8AFC /* CustomIOS8AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomIOS8AlertView.swift; sourceTree = "<group>"; };
+		5F9AAFCF1C62E0D200DC8AFC /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		90C8A6A28F7E3C7F7415ABBC /* Pods-Smart Vendor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Vendor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Vendor/Pods-Smart Vendor.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F53DC261C5AFE4C00BE6D42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB4D458642FD2BDC74A8B5D /* Pods_Smart_Vendor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F53DC3A1C5AFE4C00BE6D42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F53DC451C5AFE4C00BE6D42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FBD76115B7B7EE7D43339F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16B042AC5E63D9EF478B9D5F /* Pods_Smart_Vendor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F53DC201C5AFE4C00BE6D42 = {
+			isa = PBXGroup;
+			children = (
+				5F53DC2B1C5AFE4C00BE6D42 /* Smart Vendor */,
+				5F53DC401C5AFE4C00BE6D42 /* Smart VendorTests */,
+				5F53DC4B1C5AFE4C00BE6D42 /* Smart VendorUITests */,
+				5F53DC2A1C5AFE4C00BE6D42 /* Products */,
+				A3AA258249A8F1C86CF487E6 /* Pods */,
+				0FBD76115B7B7EE7D43339F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F53DC2A1C5AFE4C00BE6D42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F53DC291C5AFE4C00BE6D42 /* Smart Vendor.app */,
+				5F53DC3D1C5AFE4C00BE6D42 /* Smart VendorTests.xctest */,
+				5F53DC481C5AFE4C00BE6D42 /* Smart VendorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F53DC2B1C5AFE4C00BE6D42 /* Smart Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5F9AAFCD1C62DF7400DC8AFC /* CustomIOS8AlertView.swift */,
+				5F35132C1C62C5BA00E9FB5F /* JSSAlertView.swift */,
+				5F53DC2C1C5AFE4C00BE6D42 /* AppDelegate.swift */,
+				5F4A17DC1C5EFBAB00259A47 /* StartViewController.swift */,
+				5F53DC301C5AFE4C00BE6D42 /* Main.storyboard */,
+				5F8497521C66CCEC000567FC /* DoneViewController.swift */,
+				5F127CB21C61D9300008D7D9 /* BuyViewController.swift */,
+				5F127CAE1C61D2AC0008D7D9 /* ItemViewController.swift */,
+				5F53DC331C5AFE4C00BE6D42 /* Assets.xcassets */,
+				5F53DC351C5AFE4C00BE6D42 /* LaunchScreen.storyboard */,
+				5F53DC381C5AFE4C00BE6D42 /* Info.plist */,
+				5F4A17DE1C5EFEE500259A47 /* Video.mp4 */,
+				5F9AAFCF1C62E0D200DC8AFC /* SCLAlertView.swift */,
+				5F8497541C67694E000567FC /* Happy.m4a */,
+				5F8497561C6774CC000567FC /* final.m4a */,
+			);
+			path = "Smart Vendor";
+			sourceTree = "<group>";
+		};
+		5F53DC401C5AFE4C00BE6D42 /* Smart VendorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F53DC411C5AFE4C00BE6D42 /* Smart_VendorTests.swift */,
+				5F53DC431C5AFE4C00BE6D42 /* Info.plist */,
+			);
+			path = "Smart VendorTests";
+			sourceTree = "<group>";
+		};
+		5F53DC4B1C5AFE4C00BE6D42 /* Smart VendorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F53DC4C1C5AFE4C00BE6D42 /* Smart_VendorUITests.swift */,
+				5F53DC4E1C5AFE4C00BE6D42 /* Info.plist */,
+			);
+			path = "Smart VendorUITests";
+			sourceTree = "<group>";
+		};
+		A3AA258249A8F1C86CF487E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5172165DBDB15FFC2AC802FB /* Pods-Smart Vendor.debug.xcconfig */,
+				90C8A6A28F7E3C7F7415ABBC /* Pods-Smart Vendor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F53DC281C5AFE4C00BE6D42 /* Smart Vendor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F53DC511C5AFE4C00BE6D42 /* Build configuration list for PBXNativeTarget "Smart Vendor" */;
+			buildPhases = (
+				68FF6E747D9D5B9F51E514F8 /* Check Pods Manifest.lock */,
+				5F53DC251C5AFE4C00BE6D42 /* Sources */,
+				5F53DC261C5AFE4C00BE6D42 /* Frameworks */,
+				5F53DC271C5AFE4C00BE6D42 /* Resources */,
+				0603C8D191472088C4B7BEAC /* Embed Pods Frameworks */,
+				5D5A15DED1462D4D99A4939B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Vendor";
+			productName = "Smart Vendor";
+			productReference = 5F53DC291C5AFE4C00BE6D42 /* Smart Vendor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F53DC3C1C5AFE4C00BE6D42 /* Smart VendorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F53DC541C5AFE4C00BE6D42 /* Build configuration list for PBXNativeTarget "Smart VendorTests" */;
+			buildPhases = (
+				5F53DC391C5AFE4C00BE6D42 /* Sources */,
+				5F53DC3A1C5AFE4C00BE6D42 /* Frameworks */,
+				5F53DC3B1C5AFE4C00BE6D42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F53DC3F1C5AFE4C00BE6D42 /* PBXTargetDependency */,
+			);
+			name = "Smart VendorTests";
+			productName = "Smart VendorTests";
+			productReference = 5F53DC3D1C5AFE4C00BE6D42 /* Smart VendorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F53DC471C5AFE4C00BE6D42 /* Smart VendorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F53DC571C5AFE4C00BE6D42 /* Build configuration list for PBXNativeTarget "Smart VendorUITests" */;
+			buildPhases = (
+				5F53DC441C5AFE4C00BE6D42 /* Sources */,
+				5F53DC451C5AFE4C00BE6D42 /* Frameworks */,
+				5F53DC461C5AFE4C00BE6D42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F53DC4A1C5AFE4C00BE6D42 /* PBXTargetDependency */,
+			);
+			name = "Smart VendorUITests";
+			productName = "Smart VendorUITests";
+			productReference = 5F53DC481C5AFE4C00BE6D42 /* Smart VendorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F53DC211C5AFE4C00BE6D42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sagar Punhani";
+				TargetAttributes = {
+					5F53DC281C5AFE4C00BE6D42 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = F5W4L78R3F;
+					};
+					5F53DC3C1C5AFE4C00BE6D42 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = F5W4L78R3F;
+						TestTargetID = 5F53DC281C5AFE4C00BE6D42;
+					};
+					5F53DC471C5AFE4C00BE6D42 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = F5W4L78R3F;
+						TestTargetID = 5F53DC281C5AFE4C00BE6D42;
+					};
+				};
+			};
+			buildConfigurationList = 5F53DC241C5AFE4C00BE6D42 /* Build configuration list for PBXProject "Smart Vendor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F53DC201C5AFE4C00BE6D42;
+			productRefGroup = 5F53DC2A1C5AFE4C00BE6D42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F53DC281C5AFE4C00BE6D42 /* Smart Vendor */,
+				5F53DC3C1C5AFE4C00BE6D42 /* Smart VendorTests */,
+				5F53DC471C5AFE4C00BE6D42 /* Smart VendorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F53DC271C5AFE4C00BE6D42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8497571C6774E8000567FC /* final.m4a in Resources */,
+				5F8497551C67696E000567FC /* Happy.m4a in Resources */,
+				5F4A17DF1C5EFF2000259A47 /* Video.mp4 in Resources */,
+				5F53DC371C5AFE4C00BE6D42 /* LaunchScreen.storyboard in Resources */,
+				5F53DC341C5AFE4C00BE6D42 /* Assets.xcassets in Resources */,
+				5F53DC321C5AFE4C00BE6D42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F53DC3B1C5AFE4C00BE6D42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F53DC461C5AFE4C00BE6D42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0603C8D191472088C4B7BEAC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart Vendor/Pods-Smart Vendor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5A15DED1462D4D99A4939B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart Vendor/Pods-Smart Vendor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68FF6E747D9D5B9F51E514F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F53DC251C5AFE4C00BE6D42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8497531C66CCEC000567FC /* DoneViewController.swift in Sources */,
+				5F53DC2D1C5AFE4C00BE6D42 /* AppDelegate.swift in Sources */,
+				5F127CB31C61D9300008D7D9 /* BuyViewController.swift in Sources */,
+				5F35132D1C62C5BA00E9FB5F /* JSSAlertView.swift in Sources */,
+				5F9AAFCE1C62DF7400DC8AFC /* CustomIOS8AlertView.swift in Sources */,
+				5F4A17DD1C5EFBAB00259A47 /* StartViewController.swift in Sources */,
+				5F9AAFD01C62E0D200DC8AFC /* SCLAlertView.swift in Sources */,
+				5F127CAF1C61D2AC0008D7D9 /* ItemViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F53DC391C5AFE4C00BE6D42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F53DC421C5AFE4C00BE6D42 /* Smart_VendorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F53DC441C5AFE4C00BE6D42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F53DC4D1C5AFE4C00BE6D42 /* Smart_VendorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F53DC3F1C5AFE4C00BE6D42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F53DC281C5AFE4C00BE6D42 /* Smart Vendor */;
+			targetProxy = 5F53DC3E1C5AFE4C00BE6D42 /* PBXContainerItemProxy */;
+		};
+		5F53DC4A1C5AFE4C00BE6D42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F53DC281C5AFE4C00BE6D42 /* Smart Vendor */;
+			targetProxy = 5F53DC491C5AFE4C00BE6D42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F53DC301C5AFE4C00BE6D42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F53DC311C5AFE4C00BE6D42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F53DC351C5AFE4C00BE6D42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F53DC361C5AFE4C00BE6D42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F53DC4F1C5AFE4C00BE6D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F53DC501C5AFE4C00BE6D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F53DC521C5AFE4C00BE6D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5172165DBDB15FFC2AC802FB /* Pods-Smart Vendor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smart Vendor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.Smart-Vendor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F53DC531C5AFE4C00BE6D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C8A6A28F7E3C7F7415ABBC /* Pods-Smart Vendor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Smart Vendor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.Smart-Vendor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F53DC551C5AFE4C00BE6D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart VendorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.Smart-VendorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Vendor.app/Smart Vendor";
+			};
+			name = Debug;
+		};
+		5F53DC561C5AFE4C00BE6D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart VendorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.Smart-VendorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Vendor.app/Smart Vendor";
+			};
+			name = Release;
+		};
+		5F53DC581C5AFE4C00BE6D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart VendorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.Smart-VendorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Vendor";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5F53DC591C5AFE4C00BE6D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart VendorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.usc.Smart-VendorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Vendor";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F53DC241C5AFE4C00BE6D42 /* Build configuration list for PBXProject "Smart Vendor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F53DC4F1C5AFE4C00BE6D42 /* Debug */,
+				5F53DC501C5AFE4C00BE6D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F53DC511C5AFE4C00BE6D42 /* Build configuration list for PBXNativeTarget "Smart Vendor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F53DC521C5AFE4C00BE6D42 /* Debug */,
+				5F53DC531C5AFE4C00BE6D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F53DC541C5AFE4C00BE6D42 /* Build configuration list for PBXNativeTarget "Smart VendorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F53DC551C5AFE4C00BE6D42 /* Debug */,
+				5F53DC561C5AFE4C00BE6D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F53DC571C5AFE4C00BE6D42 /* Build configuration list for PBXNativeTarget "Smart VendorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F53DC581C5AFE4C00BE6D42 /* Debug */,
+				5F53DC591C5AFE4C00BE6D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F53DC211C5AFE4C00BE6D42 /* Project object */;
+}
